@@ -1,0 +1,106 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1b1b1b;
+}
+
+h3
+{
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #999;
+}
+
+#form
+{
+    position: relative;
+    border: 2px solid #131313;
+    background: linear-gradient(#1e2024,#18181c);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#form #email
+{
+   width: 300px;
+   outline: none;
+   background: transparent;
+   border: navajowhite;
+   padding: 12px 15px;
+   color: #fff;
+   font-size: 18px;
+   padding-right: 50px;
+}
+
+#form .indicator
+{
+position: absolute;
+top: 20px;
+right: 20px;
+width: 10px;
+height: 10px;
+background-color: #555;
+border-radius: 50%;
+}
+
+#form.valid .indicator
+{
+    background-color: #0f0;
+    box-shadow: 0 0 5px #0f0,
+                0 0 10px #0f0,
+                0 0 20px #0f0,
+                0 0 40px #0f0;
+}
+
+#form.invalid .indicator
+{
+    background-color: #f00;
+    box-shadow: 0 0 5px #f00,
+                0 0 10px #f00,
+                0 0 20px #f00,
+                0 0 40px #f00;
+}
+
+
+
+
+div
+{
+    position: relative;
+}
+.button
+{
+  position: absolute;
+  width: 100px;
+  justify-content: center;
+  margin-left: 100px;
+  padding: 10px;
+  top: 96px;
+  color: #999;
+  font-size: 14px;
+  background-color: transparent;
+  border:2px solid #131313;
+  background: linear-gradient(#1e2024,#18181c);
+}
+
+.button:focus
+{
+  outline:none !important;
+}
+
+input.button:hover 
+{
+    background: linear-gradient(#18181c,#1e2024);
+}
